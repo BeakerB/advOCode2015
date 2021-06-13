@@ -13,4 +13,3 @@ for z in eingabe:
         punkt = (x, y + 1)
     besucht.add(punkt)
 print(len(besucht))
-print(len(eingabe))
