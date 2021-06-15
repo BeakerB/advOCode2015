@@ -18,12 +18,30 @@ def containing(string):
             return False
     return True
 
+def pairContaining(string):
+    for i in range(len(string) - 3):
+        twoLetter = string[i] + string[i + 1]
+        for j in range(i + 2, len(string) - 1):
+            compareLetter = string[j] + string[j + 1]
+            if twoLetter == compareLetter:
+                return True    
+    return False
+
+def repeatLetter(string):
+    for i in range(len(string) - 2):
+        if string[i] == string[i + 2]:
+            return True
+    return False
+
 eingabe = open("day5_eingabe.txt", 'r')
-count = 0
+count1 = count2 = 0
 for zeile in eingabe:
     testString = (zeile.rstrip("\n"))
     if countvowels(testString) > 2 and doubleLetter(testString) and containing(testString):
         # print(testString)
-        count += 1
-print(count)
+        count1 += 1
+    if pairContaining(testString) and repeatLetter(testString):
+        count2 += 1
+print(count1)
+print(count2)
 
