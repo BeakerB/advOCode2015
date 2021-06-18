@@ -1,0 +1,16 @@
+C:\Users\Andre\Documents\___py\advOCode2015\Day6_kons\bin\Debug\net5.0\Day6_kons.exe
+C:\Users\Andre\Documents\___py\advOCode2015\Day6_kons\bin\Debug\net5.0\Day6_kons.deps.json
+C:\Users\Andre\Documents\___py\advOCode2015\Day6_kons\bin\Debug\net5.0\Day6_kons.runtimeconfig.json
+C:\Users\Andre\Documents\___py\advOCode2015\Day6_kons\bin\Debug\net5.0\Day6_kons.runtimeconfig.dev.json
+C:\Users\Andre\Documents\___py\advOCode2015\Day6_kons\bin\Debug\net5.0\Day6_kons.dll
+C:\Users\Andre\Documents\___py\advOCode2015\Day6_kons\bin\Debug\net5.0\ref\Day6_kons.dll
+C:\Users\Andre\Documents\___py\advOCode2015\Day6_kons\bin\Debug\net5.0\Day6_kons.pdb
+C:\Users\Andre\Documents\___py\advOCode2015\Day6_kons\obj\Debug\net5.0\Day6_kons.csproj.AssemblyReference.cache
+C:\Users\Andre\Documents\___py\advOCode2015\Day6_kons\obj\Debug\net5.0\Day6_kons.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andre\Documents\___py\advOCode2015\Day6_kons\obj\Debug\net5.0\Day6_kons.AssemblyInfoInputs.cache
+C:\Users\Andre\Documents\___py\advOCode2015\Day6_kons\obj\Debug\net5.0\Day6_kons.AssemblyInfo.cs
+C:\Users\Andre\Documents\___py\advOCode2015\Day6_kons\obj\Debug\net5.0\Day6_kons.csproj.CoreCompileInputs.cache
+C:\Users\Andre\Documents\___py\advOCode2015\Day6_kons\obj\Debug\net5.0\Day6_kons.dll
+C:\Users\Andre\Documents\___py\advOCode2015\Day6_kons\obj\Debug\net5.0\ref\Day6_kons.dll
+C:\Users\Andre\Documents\___py\advOCode2015\Day6_kons\obj\Debug\net5.0\Day6_kons.pdb
+C:\Users\Andre\Documents\___py\advOCode2015\Day6_kons\obj\Debug\net5.0\Day6_kons.genruntimeconfig.cache

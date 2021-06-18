@@ -1,40 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
-namespace day6_p1
+namespace Day6_kons
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    class Program
     {
-        public MainWindow()
+        static void Main(string[] args)
         {
-            InitializeComponent();
-
-            bool[,] quadratFeld = new bool[1000, 1000];
+            int[,] quadratFeld = new int[1000, 1000];
 
 
             for (int i = 0; i < 1000; i++)
             {
                 for (int j = 0; j < 1000; j++)
                 {
-                    quadratFeld[i, j] = false;
+                    quadratFeld[i, j] = 0;
                 }
             }
             string line;
+            int brightness = 0;
 
             // Read the file line by line.  
             System.IO.StreamReader file =
@@ -50,38 +33,46 @@ namespace day6_p1
                         int o = Int16.Parse((befehl[2].Split(','))[1]);
                         int r = Int16.Parse((befehl[4].Split(','))[0]);
                         int u = Int16.Parse((befehl[4].Split(','))[1]);
-                        for (int i = o; i < u; i++)
+                        for (int i = o; i < u+1; i++)
                         {
-                            for (int j = l; j < r; j++)
+                            for (int j = l; j < r+1; j++)
                             {
-                                quadratFeld[i, j] = true;
+                                quadratFeld[i, j]++;
+                                brightness++;
                             }
                         }
-                    } else
+                    }
+                    else
                     {
                         int l = Int16.Parse((befehl[2].Split(','))[0]);
                         int o = Int16.Parse((befehl[2].Split(','))[1]);
                         int r = Int16.Parse((befehl[4].Split(','))[0]);
                         int u = Int16.Parse((befehl[4].Split(','))[1]);
-                        for (int i = o; i < u; i++)
+                        for (int i = o; i < u+1; i++)
                         {
-                            for (int j = l; j < r; j++)
+                            for (int j = l; j < r+1; j++)
                             {
-                                quadratFeld[i, j] = false;
+                                if (quadratFeld[i, j] > 0)
+                                {
+                                    quadratFeld[i, j]--;
+                                    brightness--;
+                                }
                             }
                         }
                     }
-                }else
+                }
+                else
                 {
-                    int l = Int16.Parse((befehl[2].Split(','))[0]);
-                    int o = Int16.Parse((befehl[2].Split(','))[1]);
-                    int r = Int16.Parse((befehl[4].Split(','))[0]);
-                    int u = Int16.Parse((befehl[4].Split(','))[1]);
-                    for (int i = o; i < u; i++)
+                    int l = Int16.Parse((befehl[1].Split(','))[0]);
+                    int o = Int16.Parse((befehl[1].Split(','))[1]);
+                    int r = Int16.Parse((befehl[3].Split(','))[0]);
+                    int u = Int16.Parse((befehl[3].Split(','))[1]);
+                    for (int i = o; i < u+1; i++)
                     {
-                        for (int j = l; j < r; j++)
+                        for (int j = l; j < r+1; j++)
                         {
-                            quadratFeld[i, j] = !(quadratFeld[i, j]);
+                            quadratFeld[i, j] += 2;
+                            brightness += 2;
                         }
                     }
                 }
@@ -93,14 +84,12 @@ namespace day6_p1
             {
                 for (int j = 0; j < 1000; j++)
                 {
-                    if (quadratFeld[i, j])
-                    {
-                        count++;
-                    }
+                        count += quadratFeld[i, j];
                 }
             }
-            ergebnis.Text = count.ToString();
+            Console.WriteLine(brightness);
+            Console.WriteLine(count);
+            ConsoleKeyInfo x = Console.ReadKey();
         }
-
     }
 }

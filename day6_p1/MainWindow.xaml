@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:day6_p1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="MainWindow" Height="100px" Width="100px">
+        <Grid>
+            <TextBox x:Name="ergebnis" Text="TextBox" TextWrapping="Wrap" Width="120"/>
+        
     </Grid>
+
 </Window>
