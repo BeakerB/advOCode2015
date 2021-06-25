@@ -6,18 +6,18 @@ namespace Day6_kons
     {
         static void Main(string[] args)
         {
-            int[,] quadratFeld = new int[1000, 1000];
+            bool[,] quadratFeld = new bool[1000, 1000];
 
 
             for (int i = 0; i < 1000; i++)
             {
                 for (int j = 0; j < 1000; j++)
                 {
-                    quadratFeld[i, j] = 0;
+                    quadratFeld[i, j] = false;
                 }
             }
             string line;
-            int brightness = 0;
+            //int brightness = 0;
 
             // Read the file line by line.  
             System.IO.StreamReader file =
@@ -37,8 +37,8 @@ namespace Day6_kons
                         {
                             for (int j = l; j < r+1; j++)
                             {
-                                quadratFeld[i, j]++;
-                                brightness++;
+                                quadratFeld[i, j] = true;
+                                //brightness++;
                             }
                         }
                     }
@@ -52,11 +52,11 @@ namespace Day6_kons
                         {
                             for (int j = l; j < r+1; j++)
                             {
-                                if (quadratFeld[i, j] > 0)
-                                {
-                                    quadratFeld[i, j]--;
-                                    brightness--;
-                                }
+                                //if (quadratFeld[i, j] > 0)
+                                //{
+                                    quadratFeld[i, j] = false;
+                                    //brightness--;
+                                //}
                             }
                         }
                     }
@@ -71,8 +71,8 @@ namespace Day6_kons
                     {
                         for (int j = l; j < r+1; j++)
                         {
-                            quadratFeld[i, j] += 2;
-                            brightness += 2;
+                            quadratFeld[i, j] = !(quadratFeld[i, j]);
+                            //brightness += 2;
                         }
                     }
                 }
@@ -84,10 +84,14 @@ namespace Day6_kons
             {
                 for (int j = 0; j < 1000; j++)
                 {
-                        count += quadratFeld[i, j];
+                    if (quadratFeld[i, j])
+                    {
+                        count++;
+                    }
+                        
                 }
             }
-            Console.WriteLine(brightness);
+            //Console.WriteLine(brightness);
             Console.WriteLine(count);
             ConsoleKeyInfo x = Console.ReadKey();
         }
