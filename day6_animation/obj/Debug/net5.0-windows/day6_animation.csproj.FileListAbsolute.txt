@@ -1,4 +1,3 @@
-C:\Users\Andre\Documents\___py\advOCode2015\day6_animation\obj\Debug\net5.0-windows\day6_animation.csproj.AssemblyReference.cache
 C:\Users\Andre\Documents\___py\advOCode2015\day6_animation\obj\Debug\net5.0-windows\MainWindow.g.cs
 C:\Users\Andre\Documents\___py\advOCode2015\day6_animation\obj\Debug\net5.0-windows\App.g.cs
 C:\Users\Andre\Documents\___py\advOCode2015\day6_animation\obj\Debug\net5.0-windows\day6_animation_MarkupCompile.cache
@@ -20,3 +19,4 @@ C:\Users\Andre\Documents\___py\advOCode2015\day6_animation\obj\Debug\net5.0-wind
 C:\Users\Andre\Documents\___py\advOCode2015\day6_animation\obj\Debug\net5.0-windows\ref\day6_animation.dll
 C:\Users\Andre\Documents\___py\advOCode2015\day6_animation\obj\Debug\net5.0-windows\day6_animation.pdb
 C:\Users\Andre\Documents\___py\advOCode2015\day6_animation\obj\Debug\net5.0-windows\day6_animation.genruntimeconfig.cache
+C:\Users\Andre\Documents\___py\advOCode2015\day6_animation\obj\Debug\net5.0-windows\day6_animation.csprojAssemblyReference.cache
